@@ -1,0 +1,22 @@
+:root {
+  --header-bg: #21252B;
+  --header-bg-selected: #363946;
+  --color-primary: #5c6ac4;
+  --color-secondary: #ecc94b;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* CUSTOM TAILWIND */
+.jsMenuContainer {
+  @apply flex flex-col text-white text-right overflow-y-hidden transition-all duration-500;
+}
+.jsMenuItem {
+  @apply py-2 rounded-lg pr-6;
+}
+
+/* CUSTOM CSS */

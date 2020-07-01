@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/tailwind.pcss" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="flex items-center justify-between flex-wrap bg-header p-3 pt-2">
+    <div class="container mx-auto">
+      <div class="flex items-center">
+        <img class="w-12 h-12" src="./assets/logo_ingo.png" alt="Logo Carrera">
+        <h1 class="flex-1 uppercase text-xl text-white">Informática</h1>
+        <div class="lg:hidden">
+          <button id="openMenuButton" class="flex items-center text-white">
+            <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M16.4,9H3.6C3.048,9,3,9.447,3,10c0,0.553,0.048,1,0.6,1H16.4c0.552,0,0.6-0.447,0.6-1C17,9.447,16.952,9,16.4,9z M16.4,13
+              H3.6C3.048,13,3,13.447,3,14c0,0.553,0.048,1,0.6,1H16.4c0.552,0,0.6-0.447,0.6-1C17,13.447,16.952,13,16.4,13z M3.6,7H16.4
+              C16.952,7,17,6.553,17,6c0-0.553-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6C3,6.553,3.048,7,3.6,7z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="w-full overflow-x-hidden fixed top-0 bottom-0 right-0 min-h-screen transition-all duration-500">
+        <div class="p-3 bg-header min-h-full">
+          <div class="flex justify-end text-white">
+            <button id="closeMenuButton">
+              <svg
+                class="h-8 w-8 fill-current"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M14.348,14.849c-0.469,0.469-1.229,0.469-1.697,0L10,11.819l-2.651,3.029c-0.469,0.469-1.229,0.469-1.697,0
+                c-0.469-0.469-0.469-1.229,0-1.697l2.758-3.15L5.651,6.849c-0.469-0.469-0.469-1.228,0-1.697c0.469-0.469,1.228-0.469,1.697,0
+                L10,8.183l2.651-3.031c0.469-0.469,1.228-0.469,1.697,0c0.469,0.469,0.469,1.229,0,1.697l-2.758,3.152l2.758,3.15
+                C14.817,13.62,14.817,14.38,14.348,14.849z"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="jsMenuContainer text-xl">
+            <li class="jsMenuItem">
+              <a href="#">Inicio</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Carrera</a>
+              <ul class="jsMenuContainer h-0 text-lg">
+                <li class="jsMenuItem"><a href="./home.html">Información Académica</a></li>
+                <li class="jsMenuItem"><a href="#">Historia de la Carrera</a></li>
+                <li class="jsMenuItem"><a href="#">Ubicación y Mapa</a></li>
+                <li class="jsMenuItem"><a href="#">Visión y Misión</a></li>
+                <li class="jsMenuItem"><a href="#">Carrera en Cifras</a></li>
+                <li class="jsMenuItem"><a href="#">Autoridades</a></li>
+                <li class="jsMenuItem"><a href="#">Organigrama</a></li>
+                <li class="jsMenuItem"><a href="#">Acreditación</a></li>
+                <li class="jsMenuItem"><a href="#">Kardex</a></li>
+                <li class="jsMenuItem"><a href="#">Publicación y Noticias</a></li>
+              </ul>
+            </li>
+            <li class="jsMenuItem">
+              <a>Académico</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Postgrado</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Investigación</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Innovación</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Extensión</a>
+            </li>
+            <li class="jsMenuItem">
+              <a>Lasin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

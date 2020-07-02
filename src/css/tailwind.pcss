@@ -16,7 +16,24 @@
   @apply flex flex-col text-white text-right overflow-y-hidden transition-all duration-500;
 }
 .jsMenuItem {
-  @apply py-2 rounded-lg pr-6;
+  @apply py-2 rounded-lg px-3 mr-4;
+}
+.jsMenuItem>a {
+  @apply block w-full;
+}
+@screen lg {
+  .jsMenuContainer {
+    @apply text-center w-0 text-base;
+  }
+  .jsMenuItem {
+    @apply px-1 mr-0;
+  }
+  .jsMenuContainer>a {
+    @apply inline;
+  }
 }
 
 /* CUSTOM CSS */
+nav {
+  box-shadow: 5px 0 10px #212121;
+}

@@ -5,9 +5,6 @@ if (!dev) {
   plugins = [
     ...plugins,
     require('autoprefixer'),
-    require('cssnano')({
-      preset: 'default',
-    }),
   ]
 }
 

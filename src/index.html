@@ -9,8 +9,8 @@
 </head>
 <body>
   <nav class="flex items-center justify-between flex-wrap bg-header p-3 pt-2">
-    <div class="container mx-auto">
-      <div class="flex items-center">
+    <div class="container mx-auto lg:flex">
+      <div class="flex items-center lg:flex-1">
         <img class="w-12 h-12" src="./assets/logo_ingo.png" alt="Logo Carrera">
         <h1 class="flex-1 uppercase text-xl text-white">Informática</h1>
         <div class="lg:hidden">
@@ -23,9 +23,9 @@
           </button>
         </div>
       </div>
-      <div id="menu" class="w-0 overflow-x-hidden fixed top-0 bottom-0 right-0 min-h-screen transition-all duration-500">
-        <div class="p-3 bg-header min-h-full">
-          <div class="flex justify-end text-white">
+      <div id="menu" class="w-0 overflow-x-hidden fixed top-0 bottom-0 right-0 min-h-screen transition-all duration-500 lg:static lg:w-auto lg:flex lg:min-h-0 lg:items-center">
+        <div class="p-3 bg-header min-h-full lg:min-h-0 lg:p-0">
+          <div class="flex justify-end text-white lg:hidden">
             <button id="closeMenuButton">
               <svg
                 class="h-8 w-8 fill-current"
@@ -40,7 +40,7 @@
               </svg>
             </button>
           </div>
-          <ul class="jsMenuContainer text-xl">
+          <ul class="jsMenuContainer text-xl bg-header lg:flex-row lg:items-center lg:w-auto">
             <li class="jsMenuItem">
               <a href="#">Inicio</a>
             </li>
@@ -61,6 +61,35 @@
             </li>
             <li class="jsMenuItem">
               <a>Académico</a>
+              <ul class="jsMenuContainer h-0 text-lg">
+                <li class="jsMenuItem"><a href="#">Calendario Académico</a></li>
+                <li class="jsMenuItem">
+                  <a href="#">Docentes</a>
+                  <ul class="jsMenuContainer h-0 text-base">
+                    <li class="jsMenuItem"><a href="#">Docente 1</a></li>
+                    <li class="jsMenuItem"><a href="#">Docente 2</a></li>
+                    <li class="jsMenuItem"><a href="#">Docente 3</a></li>
+                    <li class="jsMenuItem"><a href="#">Docente 4</a></li>
+                    <li class="jsMenuItem"><a href="#">Docente 5</a></li>
+                    <li class="jsMenuItem"><a href="#">Docente 6</a></li>
+                  </ul>
+                </li>
+                <li class="jsMenuItem"><a href="#">Pensum</a></li>
+                <li class="jsMenuItem"><a href="#">Plan de Estudios</a></li>
+                <li class="jsMenuItem">
+                  <a>Contenido Analítico</a>
+                  <ul class="jsMenuContainer h-0 text-base">
+                    <li class="jsMenuItem"><a href="#">Primer Semestre</a></li>
+                    <li class="jsMenuItem"><a href="#">Segundo Semestre</a></li>
+                    <li class="jsMenuItem"><a href="#">Tercer Semestre</a></li>
+                    <li class="jsMenuItem"><a href="#">Cuarto Semestre</a></li>
+                    <li class="jsMenuItem"><a href="#">Quinto Semestre</a></li>
+                    <li class="jsMenuItem"><a href="#">Sexto Semestre</a></li>
+                  </ul>
+                </li>
+                <li class="jsMenuItem"><a href="#">Recursos de Información</a></li>
+                <li class="jsMenuItem"><a href="#">Congreso Universitario</a></li>
+              </ul>
             </li>
             <li class="jsMenuItem">
               <a>Postgrado</a>

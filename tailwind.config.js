@@ -5,7 +5,9 @@ module.exports = {
     enabled: dev ? false : true,
     mode: 'all',
     content: [
-      './src/**/*.html'
+      './src/**/*.html',
+      './src/**/*.js',
+      './src/**/*.pcss'
     ]
   },
   theme: {
